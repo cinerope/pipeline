@@ -1,0 +1,121 @@
+{
+  "category": {
+    "focus": {
+      "type": "object",
+      "properties": {
+        "transition_duration": {
+          "type": "string",
+          "enum": [
+            "very slow",
+            "slow",
+            "normal",
+            "fast"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "subject focus",
+            "foreground focus",
+            "background focus",
+            "rack focus",
+            "center focus"
+          ]
+        },
+        "depth": {
+          "type": "string",
+          "enum": ["shallow", "medium", "deep"]
+        }
+      }
+    },
+
+    "shot": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "string",
+          "enum": [
+            "extreme wide shot",
+            "bird eye view",
+            "wide shot",
+            "full shot",
+            "medium full shot",
+            "medium shot",
+            "medium close-up",
+            "close-up",
+            "extreme close-up"
+          ]
+        },
+        "reference": {
+          "type": "string",
+          "enum": [
+            "full body",
+            "knees up",
+            "waist up",
+            "chest up",
+            "shoulders up",
+            "face only",
+            "eyes only"
+          ]
+        }
+      }
+    },
+
+    "lens": {
+      "type": "object",
+      "properties": {
+        "focal_length": {
+          "type": ["string", "number"],
+          "enum": [
+            "16mm",
+            "24mm",
+            "35mm",
+            "50mm",
+            "85mm",
+            "135mm",
+            "custom"
+          ]
+        }
+      }
+    },
+
+    "camera": {
+      "type": "object",
+      "properties": {
+        "movement": {
+          "type": "string",
+          "enum": [
+            "static",
+            "dolly in",
+            "dolly out",
+            "pan",
+            "tilt",
+            "orbit",
+            "handheld"
+          ]
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "forward",
+            "backward",
+            "left",
+            "right",
+            "up",
+            "down",
+            "clockwise",
+            "counter-clockwise"
+          ]
+        },
+        "speed": {
+          "type": "string",
+          "enum": ["very slow", "slow", "normal", "fast"]
+        },
+        "style": {
+          "type": "string",
+          "enum": ["smooth", "shaky"]
+        }
+      }
+    }
+  }
+}
