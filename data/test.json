@@ -1,0 +1,22 @@
+{
+  "shot" : {
+    "size" : "close-up"
+  },
+
+  "lens" : {
+    "focal_length" : "135mm"
+  },
+
+  "camera" : {
+    "movement" : "orbit",
+    "direction" : "clockwise",
+    "speed" : "slow",
+    "move style" : "smooth"
+  },
+
+  "focus" : {
+    "transition_duration" : "slow",
+    "type" : "center focus",
+    "depth" : "deep"
+  }
+}
