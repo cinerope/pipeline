@@ -19,21 +19,23 @@ class Prompt:
         focus = self.json_data.get("focus", {})
 
         if subject:
-            lines.append(f"{people} {action} in {location}")
+            lines.append(f"{people} {action} in {location}.")
         if camera:
             lines.append(
-                f"The scene is framed as a {camera['position']} relative to the subject and {camera['shot size']} shot,"
+                f"The scene is framed as a {camera['shot size']} shot positioned {camera['position']} the subject."
             )
             lines.append(
-                f"The camera performs a {camera['speed']} {camera['movement']}"
+                f"The camera performs a {camera['speed']} {camera['movement']} and the camera-to-subject distance is approximately {camera['distance']}."
             )
         if lens:
             lines.append(
-                f"The shot is captured with a {lens['focal_length']} lens."
+                f"The shot is captured with an {lens['focal_length']} lens,"
             )
         if focus:
             lines.append(
-                f"The depth of field is {focus['depth']} and {focus['type']}"
+                f"with a {focus['depth']} and {focus['type']}."
             )
-
         return "\n".join(lines)
+
+prompt = Prompt()
+print(prompt.json_to_cinematic_prompt())

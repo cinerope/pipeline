@@ -30,21 +30,18 @@
 
     "lens": {
       "focal_length": [
-        "Wide-angle lens",
-        "Telephoto lens",
-        "Shallow depth of field",
-        "Fisheye lens",
+        "8mm",
+        "16mm",
+        "24mm",
+        "35mm",
+        "50mm",
+        "70mm",
+        "85mm",
         "custom"
       ]
     },
 
     "focus": {
-      "transition_duration": [
-        "very slow",
-        "slow",
-        "normal",
-        "fast"
-      ],
       "position": [
         "subject focus",
         "foreground focus",
@@ -82,7 +79,7 @@
         "Zoom out",
         "Crane shot",
         "Dron shot",
-        "Hendheld",
+        "Handheld",
         "Whip pan",
         "Arc shot",
         "Dolly zoom"
@@ -94,10 +91,8 @@
         "normal",
         "fast"
       ],
-      "move style": [
-        "smooth",
-        "shaky"
-      ]
+
+      "distance": ["custom"]
     },
 
     "video": {

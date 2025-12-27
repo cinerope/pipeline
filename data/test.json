@@ -1,7 +1,7 @@
 {
   "subject": {
-      "people": "One asian man is sadly",
-      "location": "garden",
+      "people": "An Asian man is sadly",
+      "location": "a garden",
       "action": "smoking a cigarette while looking up at the sky"
     },
 
@@ -9,16 +9,15 @@
     "focal_length": "8mm"
   },
   "focus": {
-    "transition_duration": "very slow",
     "type": "center focus",
     "depth": "deep depth of field"
   },
   "camera": {
     "shot size": "wide",
-    "position": "back",
-    "movement": "Dolly in",
+    "position": "behind",
+    "movement": "dolly in",
     "speed": "very slow",
-    "move style": "smooth"
+    "distance": "3 meters"
   },
   "video": {
     "fps": "24p",
