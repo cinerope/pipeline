@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from core.load_json import Schema, UserPick
+from core.prompt.load_json import Schema, UserPick
 
 class MappingSchema:
     def __init__(self):
@@ -12,6 +12,7 @@ class MappingSchema:
         self.schema = Schema()
         self.user_pick = UserPick()
 
+    # 선택한 파라미터들을 자연어로 매핑(테스트 후 사용여부 결정)
     @property
     def mapping(self):
         sentences = {}

@@ -1,22 +1,29 @@
 {
-  "shot" : {
-    "size" : "close-up"
-  },
+  "subject": {
+      "people": "One asian man is sadly",
+      "location": "garden",
+      "action": "smoking a cigarette while looking up at the sky"
+    },
 
-  "lens" : {
-    "focal_length" : "135mm"
+  "lens": {
+    "focal_length": "8mm"
   },
-
-  "camera" : {
-    "movement" : "orbit",
-    "direction" : "clockwise",
-    "speed" : "slow",
-    "move style" : "smooth"
+  "focus": {
+    "transition_duration": "very slow",
+    "type": "center focus",
+    "depth": "deep depth of field"
   },
-
-  "focus" : {
-    "transition_duration" : "slow",
-    "type" : "center focus",
-    "depth" : "deep"
+  "camera": {
+    "shot size": "wide",
+    "position": "back",
+    "movement": "Dolly in",
+    "speed": "very slow",
+    "move style": "smooth"
+  },
+  "video": {
+    "fps": "24p",
+    "resolution": "1080p",
+    "aspecRatio": "16:9",
+    "durationSeconds": "8"
   }
 }

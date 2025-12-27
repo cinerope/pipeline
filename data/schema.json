@@ -1,128 +1,105 @@
 {
   "categories": {
-    "camera": {
-      "focus": {
-        "type": "object",
-        "properties": {
-          "transition_duration": {
-            "type": "string",
-            "enum": [
-              "very slow",
-              "slow",
-              "normal",
-              "fast"
-            ]
-          },
-          "type": {
-            "type": "string",
-            "enum": [
-              "subject focus",
-              "foreground focus",
-              "background focus",
-              "rack focus",
-              "center focus"
-            ]
-          },
-          "depth": {
-            "type": "string",
-            "enum": [
-              "shallow",
-              "medium",
-              "deep"
-            ]
-          }
-        }
-      },
-      "shot": {
-        "type": "object",
-        "properties": {
-          "size": {
-            "type": "string",
-            "enum": [
-              "extreme wide shot",
-              "bird eye view",
-              "wide shot",
-              "full shot",
-              "medium full shot",
-              "medium shot",
-              "medium close-up",
-              "knee shot",
-              "waist shot",
-              "close-up",
-              "extreme close-up"
-            ]
-          }
-        }
-      },
-      "lens": {
-        "type": "object",
-        "properties": {
-          "focal_length": {
-            "type": [
-              "string",
-              "number"
-            ],
-            "enum": [
-              "16mm",
-              "24mm",
-              "35mm",
-              "50mm",
-              "85mm",
-              "135mm",
-              "custom"
-            ]
-          }
-        }
-      },
-      "movement": {
-        "type": "object",
-        "properties": {
-          "move": {
-            "type": "string",
-            "enum": [
-              "static",
-              "dolly in",
-              "dolly out",
-              "left pan",
-              "right pan",
-              "tilt up",
-              "tilt down",
-              "orbit",
-              "handheld"
-            ]
-          },
-          "direction": {
-            "type": "string",
-            "enum": [
-              "forward",
-              "backward",
-              "left",
-              "right",
-              "up",
-              "down",
-              "clockwise",
-              "counter-clockwise"
-            ]
-          },
-          "speed": {
-            "type": "string",
-            "enum": [
-              "very slow",
-              "slow",
-              "normal",
-              "fast"
-            ]
-          },
-          "move style": {
-            "type": "string",
-            "enum": [
-              "smooth",
-              "shaky"
-            ]
-          }
-        }
-      }
+    "subject": {
+      "people": [
+        "custom"
+      ],
+      "animals or creatures": [
+        "custom"
+      ],
+      "objects": [
+        "custom"
+      ]
     },
+
+    "shot": {
+      "size": [
+        "Eye-level",
+        "Low-angle",
+        "High-angle",
+        "Bird's-eye view",
+        "Worm's-eye view ",
+        "Dutch angle",
+        "Close-up",
+        "Extreme close-up",
+        "Wide",
+        "Over-the-shoulder",
+        "Point-of-view"
+      ]
+    },
+
+    "lens": {
+      "focal_length": [
+        "Wide-angle lens",
+        "Telephoto lens",
+        "Shallow depth of field",
+        "Fisheye lens",
+        "custom"
+      ]
+    },
+
+    "focus": {
+      "transition_duration": [
+        "very slow",
+        "slow",
+        "normal",
+        "fast"
+      ],
+      "position": [
+        "subject focus",
+        "foreground focus",
+        "background focus",
+        "rack focus",
+        "center focus"
+      ],
+      "depth": [
+        "Shallow depth of field",
+        "Deep depth of field",
+        "Rack focus"
+      ]
+    },
+
+    "camera": {
+      "position" : [
+        "left",
+        "right",
+        "front",
+        "back"
+      ],
+      "move": [
+      "Static shot",
+        "Pan left",
+        "Pan right",
+        "Tilt up",
+        "Tilt down",
+        "Dolly in",
+        "Dolly out",
+        "Truck left",
+        "Truck right",
+        "Pedestal up",
+        "Pedestal down",
+        "Zoom in",
+        "Zoom out",
+        "Crane shot",
+        "Dron shot",
+        "Hendheld",
+        "Whip pan",
+        "Arc shot",
+        "Dolly zoom"
+      ],
+
+      "speed": [
+        "very slow",
+        "slow",
+        "normal",
+        "fast"
+      ],
+      "move style": [
+        "smooth",
+        "shaky"
+      ]
+    },
+
     "video": {
       "fps": [
         "24p"
