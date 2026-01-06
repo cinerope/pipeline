@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7016be9c-a567-4a11-9082-7526cf3e1b1b" name="변경" comment="edited file names, made schema in load_schema">
+      <change afterPath="$PROJECT_DIR$/data/load_user_parameter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gen-lang-client-0290097367-9247d22def16.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/prompt/change_to_prompt.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/prompt/change_to_prompt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/apis/veo_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/apis/veo_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/prompt/change_to_prompt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/prompt/load_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/prompt/mapping_schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/prompt_mapping.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/cinerope_parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/user_parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +62,13 @@
     "Python.get_options.executor": "Run",
     "Python.load_json.executor": "Run",
     "Python.load_schema.executor": "Run",
+    "Python.load_user_parameter.executor": "Run",
     "Python.main.executor": "Run",
     "Python.mapping_schema.executor": "Run",
+    "Python.parameter_loader.executor": "Run",
     "Python.parsing_schema.executor": "Run",
+    "Python.prompt_builder.executor": "Run",
+    "Python.user_parameter.executor": "Run",
     "Python.veo_api.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -77,6 +89,7 @@
       <recent name="C:\dev\Shotrope" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\Shotrope\data" />
       <recent name="C:\dev\Shotrope\core\prompt" />
       <recent name="C:\dev\Shotrope" />
       <recent name="C:\dev\Shotrope\core" />
@@ -159,16 +172,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="edited file names, made schema in load_schema" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/main_py$load_schema.coverage" NAME="load_schema 커버리지 결과" MODIFIED="1766045335981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/load_json_py$user_parameter.coverage" NAME="user_parameter 커버리지 결과" MODIFIED="1767695616325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/main_py$change_to_prompt.coverage" NAME="change_to_prompt 커버리지 결과" MODIFIED="1766077904491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
-    <SUITE FILE_PATH="coverage/main_py$parsing_schema.coverage" NAME="parsing_schema 커버리지 결과" MODIFIED="1766064616031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
-    <SUITE FILE_PATH="coverage/load_json_py$change_to_prompt.coverage" NAME="change_to_prompt 커버리지 결과" MODIFIED="1766817777655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/prompt" />
     <SUITE FILE_PATH="coverage/main_py$get_options.coverage" NAME="get_options 커버리지 결과" MODIFIED="1765906951040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main 커버리지 결과" MODIFIED="1766080230874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/main_py$load_json.coverage" NAME="load_json 커버리지 결과" MODIFIED="1766422908251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/main_py$load_schema.coverage" NAME="load_schema 커버리지 결과" MODIFIED="1766045335981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/load_json_py$prompt_loader.coverage" NAME="prompt_loader 커버리지 결과" MODIFIED="1767454591867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/prompt" />
+    <SUITE FILE_PATH="coverage/main_py$parsing_schema.coverage" NAME="parsing_schema 커버리지 결과" MODIFIED="1766064616031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/load_json_py$load_user_parameter.coverage" NAME="load_user_parameter 커버리지 결과" MODIFIED="1767695864227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/load_json_py$change_to_prompt.coverage" NAME="change_to_prompt 커버리지 결과" MODIFIED="1767277534152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/prompt" />
+    <SUITE FILE_PATH="coverage/load_json_py$prompt_builder.coverage" NAME="prompt_builder 커버리지 결과" MODIFIED="1767696234886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/prompt" />
     <SUITE FILE_PATH="coverage/Shotrope$main.coverage" NAME="main 커버리지 결과" MODIFIED="1765730561978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/main_py$mapping_schema.coverage" NAME="mapping_schema 커버리지 결과" MODIFIED="1766079570978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
-    <SUITE FILE_PATH="coverage/load_json_py$main.coverage" NAME="main 커버리지 결과" MODIFIED="1766754000578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/load_json_py$veo_api.coverage" NAME="veo_api 커버리지 결과" MODIFIED="1766758437321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/apis" />
-    <SUITE FILE_PATH="coverage/main_py$load_json.coverage" NAME="load_json 커버리지 결과" MODIFIED="1766422908251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/load_json_py$main.coverage" NAME="main 커버리지 결과" MODIFIED="1767684061862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/load_json_py$veo_api.coverage" NAME="veo_api 커버리지 결과" MODIFIED="1767458804942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/models_video/apis" />
+    <SUITE FILE_PATH="coverage/load_json_py$parameter_loader.coverage" NAME="parameter_loader 커버리지 결과" MODIFIED="1767695277582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/parameters" />
   </component>
 </project>

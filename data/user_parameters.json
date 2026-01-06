@@ -1,0 +1,37 @@
+{
+  "cinerope_parameters" : {
+    "subject": {
+      "people": "An Asian man is sadly",
+      "location": "a garden",
+      "action": "smoking a cigarette while looking up at the sky"
+    },
+    "lens": {
+      "focal_length": "8mm"
+    },
+    "focus": {
+      "type": "center focus",
+      "depth": "deep depth of field"
+    },
+    "camera": {
+      "shot size": "wide",
+      "position": "behind",
+      "movement": "dolly in",
+      "speed": "very slow",
+      "distance": "3 meters"
+    }
+  },
+  "model_parameters" : {
+    "aspectRatio": "16:9",
+    "compressionQuality": "lossless",
+    "durationSeconds": 8,
+    "enhancePrompt": "None",
+    "generateAudio": "None",
+    "negativePrompt": "None",
+    "personGeneration": "None",
+    "resizeMode": "None",
+    "resolution": "1080p",
+    "sampleCount": "None",
+    "seed": 4293,
+    "storageUri": ""
+  }
+}
