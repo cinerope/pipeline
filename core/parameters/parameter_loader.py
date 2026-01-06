@@ -10,7 +10,7 @@ class UserParameterAccessor:
 
     @property
     def model_parameters(self):
-        return self.user_parameter.get("model_parameters", {}.items())
+        return self.user_parameter.get("model_parameters", {})
 
 class Model:
     def __init__(self, parameters: dict):

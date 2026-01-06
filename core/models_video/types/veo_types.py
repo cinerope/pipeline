@@ -35,6 +35,6 @@ class VeoRequestParameters(BaseModel):
         None, ge=0, le=4294967295
     )                                               # 일관성을 위한 seed
     storageUri: str | None = Field(
-        default= "gs://cinerope-veo-outputs/",
+        None,
         description="GCS bucket uri"
     )                                               #GCS 버킷 주소

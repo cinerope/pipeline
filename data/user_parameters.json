@@ -21,17 +21,17 @@
     }
   },
   "model_parameters" : {
+    "model_id": "veo-3.1-fast-generate-001",
     "aspectRatio": "16:9",
     "compressionQuality": "lossless",
     "durationSeconds": 8,
-    "enhancePrompt": "None",
-    "generateAudio": "None",
-    "negativePrompt": "None",
-    "personGeneration": "None",
-    "resizeMode": "None",
+    "enhancePrompt": null,
+    "generateAudio": null,
+    "negativePrompt": null,
+    "personGeneration": null,
+    "resizeMode": null,
     "resolution": "1080p",
-    "sampleCount": "None",
-    "seed": 4293,
-    "storageUri": ""
+    "sampleCount": null,
+    "seed": 4293
   }
 }
