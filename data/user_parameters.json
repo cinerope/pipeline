@@ -13,7 +13,7 @@
       "depth": "deep depth of field"
     },
     "camera": {
-      "shot size": "wide",
+      "shot_size": "wide",
       "position": "behind",
       "movement": "dolly in",
       "speed": "very slow",

@@ -1,4 +1,4 @@
-from core.parameters.parameter_loader import UserParameterAccessor
+from data.parameters.parameter_loader import UserParameterAccessor
 
 class Prompt:
     def __init__(self):
@@ -10,7 +10,7 @@ class Prompt:
         camera = self.cinerope_parameters.get("camera", {})
         if camera:
             lines.append(
-                f"A {camera['shot size']} shot, with the camera {camera['speed']} {camera['movement']} {camera['position']} the subject."
+                f"A {camera['shot_size']} shot, with the camera {camera['speed']} {camera['movement']} {camera['position']} the subject."
             )
             lines.append(
                 f"And the camera-to-subject distance is approximately {camera['distance']}."
@@ -36,6 +36,3 @@ class Prompt:
             lines.append(f"{people} {action} in {location}.")
 
         return "\n".join(lines)
-
-a = Prompt()
-print(a.text_to_video())

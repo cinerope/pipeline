@@ -1,4 +1,4 @@
-from data.load_user_parameter import UserParameter
+from data.parameters.load_user_parameter import UserParameter
 
 class UserParameterAccessor:
     def __init__(self):
@@ -6,7 +6,7 @@ class UserParameterAccessor:
 
     @property
     def cinerope_parameters(self):
-        return self.user_parameter.get("cinerope_parameters", {}.items())
+        return self.user_parameter.get("cinerope_parameters", {})
 
     @property
     def model_parameters(self):

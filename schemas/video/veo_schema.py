@@ -7,7 +7,7 @@ class VeoImageInstance(BaseModel):
     maskMode : str | None = Field(None)
     referenceType : str | None = Field(None)
 
-class VeoFristLastFrameImageInstance(BaseModel):
+class VeoFirstLastFrameImageInstance(BaseModel):
     image : VeoImageInstance | None = Field(None)
     lastFrame : VeoImageInstance | None = Field(None)
 

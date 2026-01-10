@@ -1,10 +1,12 @@
-from core.models_video.apis.veo_api import *
+import asyncio
+from services.veo_service.veo_service import VeoService
 
-def main():
-    generator = GenaiVideoGenerator()
-    operation = generator.text_to_video()
-    uri = generator.create_video(operation)
-    print(uri)
+
+async def main():
+    generator = VeoService()
+    operation = await generator.text_to_video()
+    print(operation)
+
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
