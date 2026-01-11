@@ -1,0 +1,20 @@
+from pydantic import BaseModel, Field
+
+class ImagenRequestParameters(BaseModel):
+    add_watermark: bool | None = Field(None)
+    aspect_ratio: str | None = Field(None)
+    enhance_prompt: bool | None = Field(None)
+    guidance_scale: float | None = Field(None)
+    image_size: str | None = Field(None)
+    include_rai_reason: bool | None = Field(None)
+    include_safety_attributes: bool | None = Field(None)
+    labels: dict[str, str] | None = Field(None)
+    language: str | None = Field(None)
+    negative_prompt: str | None = Field(None)
+    number_of_images: int | None = Field(None)
+    output_compression_quality: int | None = Field(None)
+    output_gcs_uri: str | None = Field(None)
+    output_mime_type: str | None = Field(None)
+    person_generation: str | None = Field(None)
+    safety_filter_level: str | None = Field(None)
+    seed: int | None = Field(None)
