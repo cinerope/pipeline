@@ -1,6 +1,6 @@
 import asyncio
 
-class VeoRunner:
+class ImagenRunner:
     def __init__(self, client):
         self.client = client
 
@@ -14,3 +14,9 @@ class VeoRunner:
             raise RuntimeError("Veo generation failed")
 
         return operation.response.generated_videos[0].video.uri
+
+    image.generated_images[0].image.save(output_file)
+
+    print(f"Created output image using {len(image.generated_images[0].image.image_bytes)} bytes")
+    # Example response = "
+    # Created output image using 1234567 bytes

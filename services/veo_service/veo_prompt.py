@@ -1,4 +1,4 @@
-from core.prompt.prompt_builder import Prompt
+from core.prompt.video_prompt_builder import Prompt
 
 class VeoPromptService:
     def __init__(self):
