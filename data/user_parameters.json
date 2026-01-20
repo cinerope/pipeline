@@ -1,4 +1,6 @@
 {
+  "id" : "kimjunsu1115",
+  "model_id" : "veo-3.1-fast-generate-001",
   "cinerope_parameters" : {
     "subject": {
       "people": "An Asian man is sadly",
@@ -21,7 +23,6 @@
     }
   },
   "model_parameters" : {
-    "model_id": "veo-3.1-fast-generate-001",
     "aspectRatio": "16:9",
     "compressionQuality": "lossless",
     "durationSeconds": 8,

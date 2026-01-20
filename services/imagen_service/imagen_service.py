@@ -1,6 +1,5 @@
 import os
 
-from apis.imagen_api import ImagenApi
 from data.parameters.parameter_loader import UserParameterAccessor, Model
 from schemas.Image.imagen_schema import ImagenRequestParameters
 

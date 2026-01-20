@@ -13,4 +13,4 @@ venv/
 # IDE
 .idea/
 
-gen-lang-client-*.json
+veo-auth-key.json

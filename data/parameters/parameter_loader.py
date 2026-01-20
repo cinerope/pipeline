@@ -1,5 +1,19 @@
 from data.parameters.load_user_parameter import UserParameter
 
+class Model:
+    def __init__(self, parameters: dict):
+        self._parameters = parameters
+    @property
+    def id(self):
+        return self._parameters.get("model_id")
+
+class User:
+    def __init__(self, parameters: dict):
+        self._parameters = parameters
+    @property
+    def id(self):
+        return self._parameters.get("user_id")
+
 class UserParameterAccessor:
     def __init__(self):
         self.user_parameter = UserParameter().get_user_parameter
@@ -11,14 +25,6 @@ class UserParameterAccessor:
     @property
     def model_parameters(self):
         return self.user_parameter.get("model_parameters", {})
-
-class Model:
-    def __init__(self, parameters: dict):
-        self._parameters = parameters
-
-    @property
-    def id(self):
-        return self._parameters.get("model_id")
 
     # veo model
     # veo-2.0-generate-001
