@@ -1,6 +1,5 @@
 import google.auth
 from google.auth.transport.requests import Request
-import os
 
 def get_headers_from_key(key_path):
     # 1. 키 파일을 사용하여 자격 증명 생성

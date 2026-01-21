@@ -1,31 +1,19 @@
 import os
+from dotenv import load_dotenv
 
-from core.prompt.video_prompt_builder import Prompt
-from data.parameters.parameter_loader import Model, User, UserParameterAccessor
-from services.get_headers import get_headers_from_key
-from services.veo_service.veo_rest import VeoRequestService
-from services.veo_service.veo_builder import VeoInstanceBuilder
-from services.veo_service.veo_payload import VeoPayload
+load_dotenv()
+VEO_KEY_PATH = os.getenv("veo-auth-key.json")
 
-class Veo2:
+
+class ModelRegistry:
     def __init__(self):
-        key_file = "veo-auth-key.json"
-        headers = get_headers_from_key(key_file)
-        VeoRequestService("veo-3.1-fast-generate-001", headers)
-
-    @staticmethod
-    def text():
-        assembly_prompt = Prompt()
-        parameters = UserParameterAccessor().model_parameters
-        veo_payload = VeoPayload.from_text(assembly_prompt, parameters)
-        VeoRequestService.submit(veo_payload)
-
-
-    @staticmethod
-    def image():
-
-
-class Veo3:
-    key_file = "veo-auth-key.json"
-    headers = get_headers_from_key(key_file)
-    veo_service = VeoRequestService("veo-3.1-fast-generate-001", headers)
+        # 모델 ID와 해당 클래스(혹은 생성 함수)를 매핑합니다.
+        self._models = {
+            "Veo2" : "veo-2.0-generate-001",
+            "Veo3" : "veo-3.0-generate-001",
+            "Veo3 fast" : "veo-3.0-fast-generate-001",
+            "Veo3 preview" : "veo-3.0-generate-preview",
+            "Veo3 fast preview" : "veo-3.0-fast-generate-preview",
+            "Veo3.1" : "veo-3.1-generate-001",
+            "Veo3.1 fast": "veo-3.1-fast-generate-001"
+        }
