@@ -4,7 +4,7 @@ from google.genai.types import GenerateVideosConfig, Image
 
 from test.python_sdk.apis.veo_api import VeoApi
 from data.parameters.parameter_loader import UserParameterAccessor, Model
-from schemas.video.veo_schema import *
+from core.schemas.video.veo_schema import *
 from test.python_sdk.veo_service.veo_prompt import VeoPromptService
 from test.python_sdk.veo_service.veo_runner import VeoRunner
 

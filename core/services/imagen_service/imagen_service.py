@@ -1,7 +1,7 @@
 import os
 
 from data.parameters.parameter_loader import UserParameterAccessor, Model
-from schemas.Image.imagen_schema import ImagenRequestParameters
+from core.schemas.Image.imagen_schema import ImagenRequestParameters
 
 from google import genai
 from google.genai.types import GenerateImagesConfig

@@ -1,6 +1,6 @@
 from typing import Dict, Any
 
-from schemas.video.veo_schema import (
+from core.schemas.video.veo_schema import (
     VeoRequestParameters,
     VeoImageInstance,
     VeoFirstLastFrameImageInstance,

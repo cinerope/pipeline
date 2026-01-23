@@ -2,7 +2,7 @@ import os
 
 import requests
 from dotenv import load_dotenv
-from services.base import VideoProvider
+from core.services.base import VideoProvider
 
 load_dotenv()
 
