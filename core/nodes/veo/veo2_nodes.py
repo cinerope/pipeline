@@ -11,11 +11,14 @@ veo2_overrides = {
         }
     }
 
-VEO2_NODES = {
+VEO2 = {
     "veo-2.0-generate-001": {
         "label": "Veo2",
         "inputs": generate_smart_inputs(VeoRequestParameters, overrides=veo2_overrides)
     },
+}
+
+VEO2_EXPERIMENT = {
     "veo-2.0-generate-exp": {
         "label": "Veo2 Experiment",
         "inputs": generate_smart_inputs(VeoRequestParameters, overrides=veo2_overrides),

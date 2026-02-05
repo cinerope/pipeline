@@ -10,29 +10,74 @@ veo3_overrides = {
     }
 }
 
-VEO3_NODES = {
+IMAGE_INPUT = {
+    "name": "image_base64",
+    "label": "Source Image",
+    "type": "IMAGE_UPLOAD",
+    "default": None
+}
+
+base_inputs_veo3 = generate_smart_inputs(VeoRequestParameters, overrides=veo3_overrides)
+
+VEO3 = {
     "veo-3.0-generate-001": {
         "label": "Veo3",
-        "inputs": generate_smart_inputs(VeoRequestParameters, overrides=veo3_overrides)
-    },
+        "inputs": base_inputs_veo3
+    }
+}
+
+VEO3_FAST = {
     "veo-3.0-fast-generate-001": {
         "label": "Veo3 Fast",
-        "inputs": generate_smart_inputs(VeoRequestParameters, overrides=veo3_overrides)
-    },
+        "inputs": base_inputs_veo3
+        }
+}
+
+VEO3_PREVIEW = {
     "veo-3.0-generate-preview": {
         "label": "Veo3 Preview",
-        "inputs": generate_smart_inputs(VeoRequestParameters, overrides=veo3_overrides)
-    },
+        "inputs": base_inputs_veo3
+    }
+}
+
+VEO3_PREVIEW_FAST = {
     "veo-3.0-fast-generate-preview": {
         "label": "Veo3 Preview Fast",
-        "inputs": generate_smart_inputs(VeoRequestParameters, overrides=veo3_overrides)
-    },
+        "inputs": base_inputs_veo3
+    }
+}
+
+VEO3_1 = {
     "veo-3.1-generate-001": {
         "label": "Veo3.1",
-        "inputs": generate_smart_inputs(VeoRequestParameters, overrides=veo3_overrides)
-    },
+        "inputs": base_inputs_veo3
+    }
+}
+
+VEO3_1_FAST = {
     "veo-3.1-fast-generate-001": {
         "label": "Veo3.1 Fast",
-        "inputs": generate_smart_inputs(VeoRequestParameters, overrides=veo3_overrides)
+        "inputs": base_inputs_veo3
+    }
+}
+
+VEO3_I2V = {
+    "veo-3.0-generate-001": {
+        "label": "Veo3 (Image to Video)",
+        "inputs": [IMAGE_INPUT] + base_inputs_veo3
+    }
+}
+
+VEO3_1_I2V = {
+    "veo-3.1-generate-001": {
+        "label": "Veo3.1 (Image to Video)",
+        "inputs": [IMAGE_INPUT] + base_inputs_veo3
+    }
+}
+
+VEO3_1_FAST_I2V = {
+    "veo-3.1-fast-generate-001": {
+        "label": "Veo3.1 (Image to Video)",
+        "inputs": [IMAGE_INPUT] + base_inputs_veo3
     }
 }

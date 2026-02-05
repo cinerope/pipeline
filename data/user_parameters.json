@@ -1,5 +1,5 @@
 {
-  "id" : "kimjunsu1115",
+  "node_id" : "uuid-1234-5678",
   "model_id" : "veo-3.1-fast-generate-001",
   "cinerope_parameters" : {
     "subject": {
@@ -26,9 +26,9 @@
     "aspectRatio": "16:9",
     "compressionQuality": "lossless",
     "durationSeconds": 8,
-    "enhancePrompt": null,
-    "generateAudio": null,
-    "negativePrompt": null,
+    "enhancePrompt": false,
+    "generateAudio": true,
+    "negativePrompt": false,
     "personGeneration": null,
     "resizeMode": null,
     "resolution": "1080p",
