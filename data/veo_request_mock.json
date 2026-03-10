@@ -1,0 +1,21 @@
+{
+  "provider": "veo",
+  "model_id": "veo-3.1-fast-generate-001",
+  "task_type": "text_to_video",
+  "prompt": "cinematic ocean wave at sunrise",
+  "options": {
+    "key_path": "veo-auth-key.json",
+    "storage_uri": "gs://cinerope-veo-outputs/veo/",
+    "mock_operation_name": "mock-op-json-1",
+    "mock_poll_response": {
+      "done": true,
+      "response": {
+        "outputs": [
+          {
+            "uri": "gs://cinerope-veo-outputs/veo/mock-sample.mp4"
+          }
+        ]
+      }
+    }
+  }
+}

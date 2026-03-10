@@ -101,3 +101,9 @@ class VeoRequestParameters(BaseModel):
             "ui_label": "Seed"
         }
     )
+
+    storageUri: str = Field(
+        "gs://cinerope-veo-outputs/veo/",
+        alias="storage_uri",
+        json_schema_extra={"ui_label": "Storage URI"}
+    )
